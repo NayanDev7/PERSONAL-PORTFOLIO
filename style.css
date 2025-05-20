@@ -1,0 +1,58 @@
+*{
+    box-sizing:border-box;
+    padding: 0;
+    margin: 0;
+}
+
+nav .navbar-brand{
+    color: blue !important; 
+    font-size: 28px;
+    font-weight: 700;
+    padding-left: 10%;
+    &:hover{
+        color: rgb(206, 79, 62);   
+    }
+    /* hover not work */
+}
+
+nav .nav-link {
+    font-size: larger;
+    font-weight: 480;
+    &:hover{
+        border-bottom: 1px solid #111;
+    }
+}
+
+nav{
+    box-shadow: 0 5px 50px rgba(0,0,0,0.2);
+    z-index: 100;
+    /* z index not work     */
+}
+
+#page1{
+    height: 100vh;
+    position: relative;
+}
+
+#page1 .pg1-col-left{
+    font-size: 50px;
+    font-weight: 750;
+}
+
+#page1 .pg1-col-left span{
+    padding-left: 35px;
+}
+
+#page1 .pg1-col-right img{
+    width: 100%;
+    margin-top: 4vh;
+}
+
+#page1 .pg1-col-left #social-media-links a{
+    text-decoration: none;
+    color: #111;
+    &:hover{
+        border-bottom: 1px solid black;
+    }
+}
+
