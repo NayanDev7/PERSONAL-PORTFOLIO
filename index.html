@@ -13,7 +13,7 @@
 
 <body>
     <nav class="navbar navbar-expand-lg navbar-light  p-3">
-        <div class="container">
+        <div class="container w-100">
             <a class="navbar-brand" href="#">NAYAN.</a>
 
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
@@ -33,26 +33,55 @@
     </nav>
 
     <main>
-        <div id="page1" class="container">
-            <div class="row">
-                <div
-                    class="pg1-col-left col-12 col-md-12 col-lg-6 d-flex flex-column align-items-start justify-content-center ps-5">
-                    <span>Hi,</span><span>I'am <span style="color: blue;">NAYAN</span></span><span>Web Developer</span>
-
-                    <div class="mt-5 ms-5" id="social-media-links">
-                        <a href="#" data-bs-toggle="tooltip" data-bs-title="Github"> <i class="ri-github-fill"> </i> </a>
-                        <a href="#" class="ms-5" data-bs-toggle="tooltip" data-bs-title="Instagram" > <i class="ri-instagram-line"> </i> </a>
-                        <a href="#" class="ms-5" data-bs-toggle="tooltip" data-bs-title="Facebook"> <i class="ri-facebook-line"></i> </a>
+        <div id="page1">
+            <div class="background-text">AYAN</div>
+            <div class="container">
+                <div class="row pt-5 pt-sm-3 pt-md-0 ">
+                    <div
+                        class="pg1-col-left col-12 col-md-12 col-lg-6 d-flex flex-column align-items-start justify-content-center ps-5">
+                        <span>Hi,</span><span>I'am <span style="color: blue;">NAYAN</span></span><span
+                            class="border-bottom border-2 border-secondary-subtle">Web Developer</span>
+                            
+                        <div class="mt-5 ms-5" id="social-media-links">
+                            <a href="https://github.com/NayanDev7" target="_blank" data-bs-toggle="tooltip"
+                                data-bs-title="Github"> <i class="ri-github-fill"> </i> </a>
+                            <a href="https://www.instagram.com/nayan_semwal_/" target="_blank" class="ms-5"
+                                data-bs-toggle="tooltip" data-bs-title="Instagram"> <i class="ri-instagram-line"> </i>
+                            </a>
+                            <a href="mailto:semwalnayan7@gmail.com" class="ms-5" data-bs-toggle="tooltip"
+                                data-bs-title="Mail"> <i class="ri-mail-send-fill"></i> </a>
+                        </div>
                     </div>
-                </div>
-                <div
-                    class="pg1-col-right col-12 col-md-12 col-lg-6 d-flex flex-column align-items-start justify-content-center pt-5">
-                    <img src="https://themewagon.github.io/satner/img/banner/home-right.png" alt="">
+                    <div
+                        class="pg1-col-right col-12 col-md-12 col-lg-6 d-flex flex-column align-items-start justify-content-center pt-5">
+                        <img src="https://themewagon.github.io/satner/img/banner/home-right.png"
+                            alt="your browser can't support this image">
+                    </div>
                 </div>
             </div>
         </div>
 
-        <div id="page2" class="container">
+        <div id="page2" class="cont">
+            <div class="row pt-4 pt-sm-3 pt-md-0">
+                <div class="pg2-col-left col-12 col-md-12 col-lg-6"><img
+                        src="https://themewagon.github.io/satner/img/about-us.png"
+                        alt="your browser can't support this image"></div>
+                <div class="pg2-col-right col-12 col-md-12 col-lg-6 d-flex flex-column ">
+                    <h1 class="text-uppercase">let's <br> introduce about <br> myself</h1>
+                    <p class="pt-4">
+                        Motivated and detail-oriented Web Developer with hands-on <br> experience in building responsive
+                        websites and dynamic user <br> interfaces using HTML, CSS, JavaScript, and Tailwind CSS.
+                        <br><br> Strong foundation in front-end technologies and currently <br> expanding skills in
+                        React.js. Committed to learning and <br> implementing best practices in UI/UX design, API
+                        integration, <br> and version control.
+                    </p>
+                    <button class="btn btn-primary w-25 mt-4">DOWNLOAD CV</button>
+                </div>
+            </div>
+        </div>
+
+
+        <div id="page3" class="container">
 
         </div>
 
@@ -74,12 +103,11 @@
     </main>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
-        crossorigin="anonymous">
-    </script>
+        integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous">
+        </script>
     <script> const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
-    const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+        const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
     </script>
-        
+
 
 </html>
