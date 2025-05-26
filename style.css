@@ -1,49 +1,51 @@
-*{
-    box-sizing:border-box;
+* {
+    box-sizing: border-box;
     padding: 0;
     margin: 0;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-nav{
-    box-shadow: 0 5px 50px rgba(0,0,0,0.2);
+
+
+nav {
+    box-shadow: 0 5px 50px rgba(0, 0, 0, 0.2);
     z-index: 1000;
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-     background: #fff;
+    background-color: #ede7e7;
     /* z index not work     */
 }
 
 
-nav .navbar-brand{
-    color: blue !important; 
+nav .navbar-brand {
+    color: blue !important;
     font-size: 28px;
     font-weight: 700;
     padding-left: 5%;
-    &:hover{
-        color: rgb(206, 79, 62);   
+
+    &:hover {
+        color: rgb(206, 79, 62);
     }
+
     /* hover not work */
 }
 
 nav .nav-link {
     font-size: larger;
     font-weight: 480;
-    &:hover{
+
+    &:hover {
         color: #3a3dee;
         border-bottom: 1px solid #111;
         opacity: 0.6;
     }
 }
 
-main{
-    padding-top: 70px;
-    z-index: 9;
-}
 
-#page1{
+
+#page1 {
     height: 100vh;
     width: 100%;
     position: relative;
@@ -51,77 +53,83 @@ main{
 }
 
 .background-text {
-  position: absolute;
-  font-size: 220px;
-  color: #000;
-  opacity: 0.08;
-  font-weight: bold;
-  z-index: 0;
-  user-select: none;
-  margin-right: 25vw;
-  margin-top: 16vh;
+    position: absolute;
+    font-size: 220px;
+    color: #000;
+    opacity: 0.08;
+    font-weight: bold;
+    z-index: 0;
+    user-select: none;
+    margin-right: 25vw;
+    margin-top: 16vh;
 }
 
-#page1 .pg1-col-left{
+#page1 .pg1-col-left {
     font-size: 50px;
     font-weight: 650;
     z-index: 1;
 }
 
-#page1 .pg1-col-left span{
+#page1 .pg1-col-left span {
     padding-left: 40px;
 }
 
-#page1 .pg1-col-right img{
+#page1 .pg1-col-right img {
     max-width: 100%;
     height: auto;
     margin-top: 4vh;
     margin-left: 2vw;
 }
 
-#page1 .pg1-col-left #social-media-links a{
-    text-decoration: none; 
+#page1 .pg1-col-left #social-media-links a {
+    text-decoration: none;
     color: #111;
     padding-top: 2vh;
-    padding: 4px;
-    padding-left: 0.5vw;
-    &:hover{
+    padding: 2x;
+    padding-left: 0.8vw;
+
+    &:hover {
         opacity: 0.8;
         border-bottom: 1px solid black;
     }
 }
 
-#page2{
-    height: 100%;
-    position: relative;
-    margin-top: 20vh;
+#social-media-links i{
+    font-size: 35px;
+    font-weight: 580;
 }
 
-#page2 .pg2-col-left img{
+#page2 {
+    height: 100%;
+    position: relative;
+    margin-top: 50vh;
+}
+
+#page2 .pg2-col-left img {
     max-width: 100%;
     height: auto;
     margin-left: 0%;
 }
 
-#page2 .pg2-col-right{
+#page2 .pg2-col-right {
     padding-top: 12vh;
-} 
+}
 
-#page2 .pg2-col-right h1{
+#page2 .pg2-col-right h1 {
     font-weight: 680;
 }
 
-#page2 .pg2-col-right p{
+#page2 .pg2-col-right p {
     opacity: 0.6;
-} 
+}
 
-#page3{
+#page3 {
     height: 100vh;
     width: 100%;
     position: relative;
-    }
+}
 
-#page3 h1{
+#page3 h1 {
     font-weight: 750;
     margin-top: 15vh;
     padding: 5px;
@@ -129,7 +137,7 @@ main{
 }
 
 
-#page3 .skill-container{
+#page3 .skill-container {
     position: absolute;
     width: 95%;
     height: auto;
@@ -149,16 +157,164 @@ main{
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    border: 1px solid rgba(0,0,0,0.1);
+    border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 8%;
-    &:hover{
-        box-shadow: 5px 5px 40px rgba(0,0,0,0.5);
+
+    &:hover {
+        box-shadow: 5px 5px 40px rgba(0, 0, 0, 0.5);
         cursor: default;
     }
 }
 
-#page3 .skill-container .skill-items img{
+#page3 .skill-container .skill-items img {
     width: 30%;
     object-fit: cover;
 }
 
+#page4 {
+    min-height: 260vh;
+    width: 100%;
+    position: relative;
+    background-color: #111;
+    color: #fff;
+}
+
+#page4 h1 {
+    margin-top: 48vh;
+    margin-left: 47%;
+    padding-top: 10vh;
+    border-bottom: 1px solid #fffefe;
+}
+
+#page4 .proj-1 {
+    position: absolute;
+    width: 100%;
+    /* background-color: red; */
+    margin-top: 20vh;
+    padding: 0 5vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#page4 .proj-1 .pro1-left{
+    height: 50vh;
+    width: 50%;
+    background-color:bisque;
+}
+
+#page4 .proj-1 .pro1-left img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+
+#page4 .proj-1 .pro1-right{
+    height: 50vh;
+    width: 40%;
+    /* background-color: blue; */
+    padding-top: 10vh;
+    border-bottom: 1px solid #fff;
+}
+
+
+#page4 .proj-2 {
+    position: absolute;
+    width: 100%;
+    /* background-color: red; */
+    margin-top: 100vh;
+    padding: 0 5vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#page4 .proj-2 .pro1-left{
+    height: 50vh;
+    width: 40%;
+    /* background-color: blue; */
+    padding-top: 10vh;
+    border-bottom: 1px solid #fff;
+}
+
+
+#page4 .proj-2 .pro1-right{
+    height: 50vh;
+    width: 50%;
+    background-color:bisque;
+}
+
+#page4 .proj-2 .pro1-right img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+
+#page4 .proj-3 {
+    position: absolute;
+    width: 100%;
+    /* background-color: red; */
+    margin-top: 180vh;
+    padding: 0 5vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#page4 .proj-3 .pro1-left{
+    height: 50vh;
+    width: 50%;
+    background-color:bisque;
+}
+
+#page4 .proj-3 .pro1-left img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+
+#page4 .proj-3 .pro1-right{
+    height: 50vh;
+    width: 40%;
+    /* background-color: blue; */
+    padding-top: 10vh;    
+    border-bottom: 1px solid #fff;
+}
+
+footer{
+    width: 100%;
+    height: 50vh;
+    /* margin-top: 15vh; */
+    background-color: rgb(232, 222, 222);
+}
+
+footer h1{
+    padding-top: 10vh;
+    margin-left: 5%;
+}
+
+
+footer h2{
+    margin-top: 8vh;
+    margin-left: 44%;
+    padding-bottom: 5vh;
+    padding-top: 15vh;
+    font-size: 6vh;
+}
+
+footer .footer-content{
+    display: flex;
+    justify-content: center;
+    column-gap: 3px;
+    opacity: 0.7;
+}
+
+footer a{
+    font-size: 5vh;
+
+    text-decoration: none;
+    color: #111;
+}
